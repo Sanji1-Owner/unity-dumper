@@ -1,0 +1,11 @@
+{
+  "unity_versions": {
+    "2018": "Verified",
+    "2019": "Verified",
+    "2020": "Verified",
+    "2021": "Partial",
+    "2022": "Partial",
+    "Unity 6": "Unknown"
+  },
+  "notes": "Unity 2021+ introduced changes in SerializedFile header and TypeTree structures that are partially supported."
+}

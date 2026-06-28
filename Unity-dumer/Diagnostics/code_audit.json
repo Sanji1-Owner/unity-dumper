@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "UnityFS Parsing",
+    "status": "Verified",
+    "file": "UnityAnalyzer/Archives/UnityFSParser.cpp",
+    "reason": "Functional archive traversal and block decompression (LZ4/LZMA) implemented."
+  },
+  {
+    "feature": "Texture Extraction",
+    "status": "Partial",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "Supports DDS/TGA headers. PNG conversion is missing; exports raw data with custom headers."
+  },
+  {
+    "feature": "Mesh Extraction",
+    "status": "Partial",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "Exports vertices and faces to OBJ. Normals and UVs are parsed but not currently written to the output file."
+  },
+  {
+    "feature": "Audio Extraction",
+    "status": "Partial",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "WAV header generated, but channels and frequency are currently hardcoded to 2/44100 instead of using parsed metadata."
+  },
+  {
+    "feature": "GameObject Hierarchy",
+    "status": "Verified",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "Transform and GameObject relationship mapping is functional."
+  },
+  {
+    "feature": "Animation Extraction",
+    "status": "Missing",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "Stub implementation; only parses the asset name."
+  },
+  {
+    "feature": "Shader Extraction",
+    "status": "Partial",
+    "file": "UnityAnalyzer/Unity/Objects/ObjectReader.cpp",
+    "reason": "Exports raw shader bytecode blobs without disassembly or metadata."
+  },
+  {
+    "feature": "IL2CPP Metadata",
+    "status": "Partial",
+    "file": "UnityAnalyzer/Unity/Il2CppMetadata/Il2CppMetadataReader.cpp",
+    "reason": "Basic structural parsing exists but lacks version-specific branching for metadata < v24."
+  },
+  {
+    "feature": "Memory Reader",
+    "status": "Verified",
+    "file": "UnityAnalyzer/Runtime/MemoryReader.cpp",
+    "reason": "Cross-process memory reading for Windows and Linux/Android implemented."
+  },
+  {
+    "feature": "Android Bridge",
+    "status": "Verified",
+    "file": "UnityAnalyzer/Runtime/AndroidBridge.cpp",
+    "reason": "JNI initialization and VM attachment functional."
+  }
+]

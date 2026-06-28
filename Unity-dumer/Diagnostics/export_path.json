@@ -1,0 +1,7 @@
+{
+  "resolved_path": "C:/Users/PIN/Desktop/il2cpp/DumpSession",
+  "platform": "Windows",
+  "source": "config/default",
+  "android_default": "/storage/emulated/0/UnityAnalyzer/DumpSession",
+  "desktop_default": "./DumpSession"
+}

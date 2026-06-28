@@ -1,0 +1,13 @@
+{
+    "name": "Unity 2019.4 LTS",
+    "unity_version": "2019.4",
+    "platform": "Windows",
+    "architecture": "x64",
+    "offsets": {
+        "GameObject_Name": 16,
+        "GameObject_Component": 48,
+        "Component_GameObject": 8,
+        "Class_Name": 16,
+        "Field_Offset": 32
+    }
+}

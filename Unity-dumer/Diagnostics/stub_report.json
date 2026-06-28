@@ -1,0 +1,28 @@
+{
+  "stubs": [
+    {
+      "reader": "AnimationClipReader",
+      "status": "Partial",
+      "issue": "Only name is extracted. Curves and keyframes are missing.",
+      "file": "Unity/Objects/ObjectReader.cpp"
+    },
+    {
+      "reader": "SpriteReader",
+      "status": "Missing",
+      "issue": "No parsing or export logic implemented.",
+      "file": "Unity/Objects/ObjectReader.cpp"
+    },
+    {
+      "reader": "ShaderReader",
+      "status": "Partial",
+      "issue": "Raw bytecode export only. No decompilation.",
+      "file": "Unity/Objects/ObjectReader.cpp"
+    },
+    {
+      "reader": "AudioClipReader",
+      "status": "Partial",
+      "issue": "Hardcoded channels (2) and frequency (44100). Metadata parsing incomplete.",
+      "file": "Unity/Objects/ObjectReader.cpp"
+    }
+  ]
+}

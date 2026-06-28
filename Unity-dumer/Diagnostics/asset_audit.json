@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "type": "Texture2D",
+      "status": "Verified",
+      "formats": ["DDS", "TGA", "Raw"],
+      "details": "Parses width, height, format. Reconstructs headers for DXT1/DXT5 and RGB/RGBA."
+    },
+    {
+      "type": "Mesh",
+      "status": "Verified",
+      "formats": ["OBJ"],
+      "details": "Parses vertices and indices (16/32-bit). Generates valid OBJ faces."
+    },
+    {
+      "type": "AudioClip",
+      "status": "Verified",
+      "formats": ["WAV"],
+      "details": "Parses frequency and channels. Reconstructs PCM WAV header."
+    },
+    {
+      "type": "GameObject",
+      "status": "Verified",
+      "formats": ["JSON"],
+      "details": "Reconstructs component lists and names."
+    },
+    {
+      "type": "Transform",
+      "status": "Verified",
+      "formats": ["JSON"],
+      "details": "Extracts position, rotation, and hierarchy PPtrs."
+    },
+    {
+      "type": "AnimationClip",
+      "status": "Partial",
+      "formats": ["JSON"],
+      "details": "Extracts name and basic metadata. Curve data extraction is stubbed."
+    },
+    {
+      "type": "Shader",
+      "status": "Partial",
+      "formats": ["Binary"],
+      "details": "Extracts raw shader container blobs. No decompiler included."
+    },
+    {
+      "type": "Sprite",
+      "status": "Partial",
+      "formats": ["JSON"],
+      "details": "Extracts name and texture references."
+    }
+  ]
+}

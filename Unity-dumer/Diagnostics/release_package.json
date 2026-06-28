@@ -1,0 +1,33 @@
+{
+  "release_status": "Release Candidate (RC3)",
+  "version": "1.0.0",
+  "owner": "Sanji1-Owner",
+  "build_status": {
+    "windows_x64": "SUCCESS",
+    "android_arm64": "SUCCESS",
+    "linux_x64": "SUCCESS"
+  },
+  "supported_platforms": [
+    "Windows",
+    "Android",
+    "Linux"
+  ],
+  "verified_features": [
+    "UnityFS Parsing",
+    "SerializedFile Analysis",
+    "TypeTree Reconstruction",
+    "LZ4/LZMA Decompression",
+    "Texture Export (DDS/TGA)",
+    "Mesh Export (OBJ)",
+    "Audio Export (WAV)",
+    "GameObject Hierarchy",
+    "IL2CPP Metadata v16-v31",
+    "C# SDK Generation",
+    "Runtime Module Discovery"
+  ],
+  "limitations": [
+    "Animation curves not fully reconstructed",
+    "Shader decompiler not implemented (bytecode only)",
+    "Dummy DLL is source-level only"
+  ]
+}
